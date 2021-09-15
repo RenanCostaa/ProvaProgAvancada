@@ -1,18 +1,10 @@
-class Nacional : veiculo{
+class Nacional : Veiculo{
 
   public Nacional(string c, string mc, string mod, double val, int a):base(c,mc,mod,val,a){
   }
   
-  public override definirValorVeiculo(double custoFixo){
-    valor=(custoFixo*1.5)+(custoFixo*0.2)+(custoFixo/10);
-    veiculo.SetValor(valor);
+  public override void definirValorVeiculo(double custoFixo){
+    double valorReal=(custoFixo*1.5)+(custoFixo*0.2)+(custoFixo/10);
+    Veiculo.SetValor(valorReal);
   }
 }
-
-/*
-  private string cor;
-  private string marca;
-  private string modelo;
-  private double valor;
-  private int anoFabricacao;
-*/
