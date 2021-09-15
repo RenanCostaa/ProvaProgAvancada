@@ -7,7 +7,7 @@ public class Veiculo{
   private double valor;
   private int anoFabricacao;
 
-  public static void SetValor(double valorCalculado){
+  public void SetValor(double valorCalculado){
     valor=valorCalculado;
     Console.Out.WriteLine("valor alterado");
   }
